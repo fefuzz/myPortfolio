@@ -22,8 +22,13 @@ function AddAccount(props) {
                 reg_psw: password
             })
             .then(res => {
-                //TODO CHECK IF REGISTER IS OK
-                nextChallenge('exist_user')
+                console.log(res.data)
+                if(res.data === 'USER_INSERTED'){
+                    nextChallenge('exist_user')
+                }
+                else if(res.data === 'USER_NOT_INSERTED'){
+                    setState('NOT_INSERTED')
+                }
             })
             .catch(rej => { console.log(rej) })
         }
@@ -41,6 +46,9 @@ function AddAccount(props) {
         }
         if(state === 'FORM_UNCOMPLETE'){
             result.push(<p key={'form_uncomplete_parag'}>Form non Completo, per favore completalo</p>)
+        }
+        if(state === 'NOT_INSERTED'){
+            result.push(<p key={'user_not_inserted_parag'}>Errore nell'inserimento, riprova con un'altro Username</p>)
         }
 
         return result

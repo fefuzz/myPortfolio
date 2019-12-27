@@ -15,11 +15,17 @@ router.post('/', function(req, res, next) {
     var username = req.body.reg_usr
     var password = req.body.reg_psw
 
-    connection.query('INSERT INTO `users`(`username`, `password`) VALUES ("'+username+'","'+password+'")', function(err, result) {
-    if (err) throw err;
+    if(username === 'username'){
+      res.send('USER_NOT_INSERTED')
+    }
 
-    res.send('USER_INSERTED')
-    });
+    else { 
+      connection.query('INSERT INTO `users`(`username`, `password`) VALUES ("'+username+'","'+password+'")', 
+      function(err, result) {
+        if (err) throw err;
+        res.send('USER_INSERTED')
+      });
+    }
 
 });
 

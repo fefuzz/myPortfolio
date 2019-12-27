@@ -19,7 +19,11 @@ router.post('/', function(req, res, next) {
 
   connection.query('SELECT * FROM users U WHERE U.username = "'+ username +'" AND U.password="'+password+'"', function(err, result) {
     if (err) throw err;
-    if(result[0] != null){
+    if(result[0] != null && result[0].username==='username'){
+      console.log('Requested Exist')
+      retVal = { user: 'ADMIN_EXIST' }
+    }
+    else if(result[0]!= null && result[0].username!='username'){
       console.log('Requested Exist')
       retVal = { user: 'USER_EXIST' }
     }

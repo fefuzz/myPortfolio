@@ -13,9 +13,12 @@ function WelcomeForm(props) {
             password: password_val
         })
         .then(res => {
-                if(res.data.user === 'USER_EXIST'){   
-                        setChallenge('new_user')
-                    }
+                if(res.data.user === 'USER_EXIST'){
+                    setChallenge('exist_user')
+                }
+                else if(res.data.user === 'ADMIN_EXIST'){   
+                    setChallenge('new_user')
+                }
         })
         .catch(rej => console.log(rej))
     }

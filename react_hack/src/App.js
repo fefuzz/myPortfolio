@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Welcome from './components/Welcome'
 import AddAccount from './components/addAccount'
+import Sidebar from './components/SideBarMenu'
+import MainComp from './components/MainComponent'
 
 import './styles/App.css';
 
@@ -13,7 +15,7 @@ function App() {
     if(nextType === 'new_user'){ //new user is starting challenge, redirect on challenge_2
       setChallenge('CHALLENGE_2')
     }
-    else if (nextType === 'exist_user'){
+    else if (nextType === 'exist_user'){ //existing user login or new user registered
       setChallenge('CHALLENGE_3')
     }
   }
@@ -23,13 +25,13 @@ function App() {
     if(currentChallenge === 'CHALLENGE_1'){
       result.push(<Welcome key={'welcome_comp'} setNext={setNextChallenge}/>)
     }
-    if(currentChallenge === 'CHALLENGE_2'){
+    else if(currentChallenge === 'CHALLENGE_2'){
       result.push(<AddAccount key={'add_account_comp'} setNext={setNextChallenge}/>)
     }
     else{
-      //TODO APPEND USER BAR
+      result.push(<Sidebar key={'sidebar_comp'}/>)
       if(currentChallenge === 'CHALLENGE_3') {
-        //TODO NEW COMPONENT
+        result.push(<MainComp key={'main_comp'} currentChallenge={currentChallenge}/>)
       }
       // TODOS OTHER CHALLENGES
     }
