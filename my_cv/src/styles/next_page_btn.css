@@ -1,0 +1,29 @@
+.NextPage{
+    position: absolute;
+    margin-left: 95vw;
+    opacity: 0;
+    animation: FadeArrow 5s infinite;
+    transition: 1s;
+}
+
+.NextPage:hover{
+    position: absolute;
+    margin-left: 95vw;
+    opacity: 0;
+    animation: FadeHover 2s infinite;
+    cursor: pointer;
+    transition: 3s;
+}
+
+@keyframes FadeArrow {
+    0%{ opacity: 0;}
+    50%{ opacity: 0;}
+    60%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes FadeHover{
+    0%{ opacity: 0;}
+    40%{opacity: 1;}
+    100%{opacity: 0;}
+}

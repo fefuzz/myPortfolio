@@ -1,13 +1,35 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import WelcomeDiv from './subComponents/WelcomeJs/WelcomeDiv'
-import NextPage from './subComponents/WelcomeJs/NextPage'
+import NextPageBtn from './subComponents/NextPageBtn'
 
 import '../styles/welcome.css'
 
-function WelcomePage() {
+function WelcomePage(props) {
 
-    return ( <div className='WelcomePage'> <WelcomeDiv /> <NextPage /> </div>)
+    let setPage = props.setPage
+
+
+    let changePageAnimated = () => {
+        
+        let welcomePageDiv = document.getElementsByClassName('WelcomePage')[0];
+        welcomePageDiv.style.opacity = 1;
+
+        let myTimer = setInterval( () => {
+            welcomePageDiv.style.opacity -= 0.1;
+            if(welcomePageDiv.style.opacity <= 0){
+                clearInterval(myTimer);
+                setPage('PRESENTATION_PAGE')
+            }
+        }, 20);
+    }
+
+    return ( 
+        <div className='WelcomePage'> 
+            <WelcomeDiv /> 
+            <NextPageBtn setPage={changePageAnimated}/> 
+        </div>
+    )
 }
 
 export default WelcomePage

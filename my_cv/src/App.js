@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import WelcomePage from "./components/WelcomePage";
+import PresentationPage from "./components/PresentationPage";
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
   var render = () => {
     if(currPage === 'WELCOME_PAGE'){
       return <WelcomePage setPage={setPage} />
+    }
+    if(currPage === 'PRESENTATION_PAGE'){
+      return <PresentationPage setPage={setPage} />
     }
   };
 
