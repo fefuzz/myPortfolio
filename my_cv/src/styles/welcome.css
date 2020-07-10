@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Inria+Serif|Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+
+
+.WelcomePage{
+    background-color: rgba(27, 30, 33, 1);
+    min-height: 100vh;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  
+    font-family: 'Poppins', sans-serif;
+  
+    animation: BackgroundFade;
+    animation-duration: 0.5s;
+}
+
+    .WelcomePage h2{
+        font-family: 'Lobster';
+        font-size: 30px;
+    }
+
+    .WelcomePage h3{
+    font-size: 20px;
+    }
+
+    .WelcomePage p{
+    font-size: 16px;
+    }
+
+
+.WelcomeDiv {
+    margin: 0;
+    border: 0;
+    height: fit-content;
+    width: 500px;
+    border-radius: 10% 10% 10% 10% / 90% 90% 90% 90% ;
+    background-color: rgba(0, 179, 196, 1);
+    color: #17191e;
+    padding: 10px;
+    animation: FandeAndGrow 2s;
+    box-shadow: 0 10px 6px -6px black;
+    transition: 0.3s;
+}
+
+    .WelcomeDiv:hover{
+        border-radius: 6% 6% 6% 6% / 90% 90% 90% 90% ;
+    }
+
+    .WelcomeDiv p:hover{color: green;}
+
+        .Presentations{
+            animation: Fade 3s
+        }
+
+        .Presentations p{
+            font-size: larger;
+            font-family: 'Lobster', cursive;
+        }
+
+        .NextPage{
+            position: absolute;
+            margin-left: 95vw;
+            opacity: 0;
+            animation: FadeArrow 5s infinite;
+            transition: 1s;
+        }
+
+        .NextPage:hover{
+            position: absolute;
+            margin-left: 95vw;
+            opacity: 0;
+            animation: FadeHover 2s infinite;
+            cursor: pointer;
+            transition: 3s;
+        }
+
+
+
+@keyframes Fade {
+    0%{ opacity: 0;}
+    40%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes FadeArrow {
+    0%{ opacity: 0;}
+    50%{ opacity: 0;}
+    60%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes FadeHover{
+    0%{ opacity: 0;}
+    40%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes FandeAndGrow {
+    from{ 
+        background-color: rgba(27, 30, 33, 0);
+    }
+    to{
+        background-color: rgba(0, 179, 196, 1);
+    }
+
+    50% {width: 400px;}
+    100% {width: 500px;}
+}
+
+@keyframes BackgroundFade{
+  from{
+    background-color: initial;
+}
+  to{
+    background-color: rgba(27, 30, 33, 1);
+  }
+}
