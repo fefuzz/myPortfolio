@@ -1,29 +1,30 @@
 .NextPage{
     position: absolute;
     margin-left: 95vw;
-    opacity: 0;
-    animation: FadeArrow 5s infinite;
-    transition: 1s;
+    height: 15px;
+    width: 50px;
+    background-color: inherit;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 7px;
+    animation: Fade 2s;
+    color: rgb(177, 177, 177);
+}
+
+.NextPage p {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .NextPage:hover{
-    position: absolute;
-    margin-left: 95vw;
-    opacity: 0;
-    animation: FadeHover 2s infinite;
+    background-color: rgb(177, 177, 177);
+    color: rgba(27, 30, 33, 1);
     cursor: pointer;
-    transition: 3s;
 }
 
-@keyframes FadeArrow {
+@keyframes Fade {
     0%{ opacity: 0;}
-    50%{ opacity: 0;}
-    60%{opacity: 1;}
-    100%{opacity: 0;}
-}
-
-@keyframes FadeHover{
-    0%{ opacity: 0;}
-    40%{opacity: 1;}
-    100%{opacity: 0;}
+    40%{ opacity: 0;}
+    100%{opacity: 1;}
 }

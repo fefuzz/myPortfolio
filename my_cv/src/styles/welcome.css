@@ -14,39 +14,43 @@
     text-align: center;
   
     font-family: 'Poppins', sans-serif;
+
+    animation: EnterFade;
+    animation-duration: 0.5s;
 }
-
-    .WelcomePage h2{
-        
-        font-size: 30px;
-    }
-
-    .WelcomePage h3{
-    font-size: 20px;
-    }
-
-    .WelcomePage p{
-        font-size: 16px;
-        font-family: 'Lobster';
-    }
 
 
 .WelcomeDiv {
     margin: 0;
     border: 0;
-    height: fit-content;
-    width: 500px;
-    border-radius: 10% 10% 10% 10% / 90% 90% 90% 90% ;
+    height: 127px;
+    width: 400px;
+    border-radius: 6% 6% 6% 6% / 95% 95% 95% 95% ;
     background-color: rgba(0, 179, 196, 1);
     color: #17191e;
     padding: 10px;
-    animation: FandeAndGrow 2s;
+    animation: FandeAndGrowSmall 2s;
     box-shadow: 0 10px 6px -6px black;
     transition: 0.3s;
 }
 
     .WelcomeDiv:hover{
-        border-radius: 6% 6% 6% 6% / 90% 90% 90% 90% ;
+        border-radius: 2% 2% 2% 2% / 95% 95% 95% 95%;
+    }
+
+    .WelcomeDiv h2{
+        font-size: 30px;
+    }
+
+    .WelcomeDiv h3{
+    font-size: 20px;
+    animation: EnterGrowText 2s;
+    }
+
+    .WelcomeDiv p{
+        font-size: 16px;
+        font-family: 'Lobster';
+        animation: EnterGrowTextP 2s;
     }
 
         .Presentations{
@@ -67,7 +71,24 @@
     100%{opacity: 1;}
 }
 
-@keyframes FandeAndGrow {
+@keyframes EnterFade{
+    from { background-color: rgb(177, 177, 177);}
+    to { background-color: rgba(27, 30, 33, 1);}
+  }
+
+@keyframes EnterGrowText {
+    0% { font-size: 5px;}
+    40% {font-size: 5px;}
+    100% {font-size: 20px;}
+}
+
+@keyframes EnterGrowTextP {
+    0% { font-size: 5px;}
+    40% {font-size: 5px;}
+    100% {font-size: 16px;}
+}
+
+@keyframes FandeAndGrowSmall {
     from{ 
         background-color: rgba(27, 30, 33, 0);
     }
@@ -75,6 +96,6 @@
         background-color: rgba(0, 179, 196, 1);
     }
 
-    50% {width: 400px;}
-    100% {width: 500px;}
+    50% {width: 300px;}
+    100% {width: 400px;}
 }

@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
 
 
-.PresentationPage {
+.CareerPage {
     background-color: rgba(27, 30, 33, 1);
     min-height: 100vh;
     min-width: 900px;
@@ -15,12 +15,74 @@
   
     font-family: 'Poppins', sans-serif;
   
-    animation: EnterFromRight;
+    animation: EnterFade;
     animation-duration: 0.5s;
 }
 
+    .CareerPage h2{
+        font-size: 30px;
+    }
 
-@keyframes EnterFromRight{
-    0%{ margin-left: 100vw; }
-    100%{ margin-left: 0vw; }
+    .CareerPage h3{
+    font-size: 20px;
+    }
+
+    .CareerPage p{
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+
+.CareerDiv {
+    margin: 0;
+    border: 0;
+    height: fit-content;
+    width: 800px;
+    border-radius: 2% 2% 2% 2% / 90% 90% 90% 90% ;
+    background-color: rgba(0, 179, 196, 1);
+    color: #17191e;
+    padding: 10px;
+    animation: FandeAndGrowBig 1s;
+    box-shadow: 0 10px 6px -6px black;
+    transition: 0.3s;
+}
+
+    .CareerDiv:hover{
+        border-radius: 1% 1% 1% 1% / 90% 90% 90% 90% ;
+    }
+
+        .CareerInfo{
+            animation: Fade 2s
+        }
+
+        .CareerInfo p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+        }
+
+        
+
+
+
+@keyframes Fade {
+    0%{ opacity: 0;}
+    40%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes EnterFade{
+    from { background-color: rgb(177, 177, 177);}
+    to { background-color: rgba(27, 30, 33, 1);}
   }
+
+@keyframes FandeAndGrowBig {
+    from{ 
+        background-color: rgba(27, 30, 33, 0);
+    }
+    to{
+        background-color: rgba(0, 179, 196, 1);
+    }
+
+    50% {width: 750px;}
+    100% {width: 800px;}
+}
