@@ -4,7 +4,7 @@ function Presentations() {
     return (
         <div className='Presentations'>
             <h3>Welcome in My CV</h3>
-            <p>i'm Pierpaolo Vanni</p>
+            <p>Pierpaolo Vanni</p>
         </div>
     )
 }

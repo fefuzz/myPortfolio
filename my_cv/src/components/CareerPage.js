@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/presentation.css'
+import '../styles/career.css'
 import NextPage from './subComponents/NextPageBtn';
 import CareerDiv from './subComponents/PresentationJs/Career';
 

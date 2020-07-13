@@ -1,11 +1,10 @@
 .NextPage{
     position: absolute;
     margin-left: 95vw;
-    height: 15px;
+    height: 22px;
     width: 50px;
     background-color: inherit;
-    border: 1px solid rgb(177, 177, 177);
-    border-radius: 7px;
+    border: 2px solid rgb(177, 177, 177);
     animation: Fade 2s;
     color: rgb(177, 177, 177);
 }
@@ -13,14 +12,24 @@
 .NextPage p {
     padding: 0;
     margin: 0;
-    font-size: 10px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
+    transition: 600ms;
 }
 
 .NextPage:hover{
     background-color: rgb(177, 177, 177);
     color: rgba(27, 30, 33, 1);
     cursor: pointer;
+}
+
+.NextPage p:after{
+    font-size: 14px;
+    content:'Next';
+}
+.NextPage p:hover:after{
+    font-size: 14px;
+    content:'> Next';
 }
 
 @keyframes Fade {

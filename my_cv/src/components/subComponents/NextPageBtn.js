@@ -16,7 +16,6 @@ function NextPageBtn(props) {
         let div = document.getElementsByClassName(currDiv)[0];
 
         let btn = document.getElementsByClassName('NextPage')[0];
-        btn.innerHTML= '<p>NEXT ></p>'
 
         div.style.marginRight = '50px';
 
@@ -27,7 +26,6 @@ function NextPageBtn(props) {
         let div = document.getElementsByClassName(currDiv)[0];
 
         let btn = document.getElementsByClassName('NextPage')[0];
-        btn.innerHTML= '<p>NEXT</p>';
 
         div.style.marginRight = '0';
 
@@ -38,7 +36,7 @@ function NextPageBtn(props) {
 
     return (
         <div className='NextPage' onClick={setNextPage} onMouseOver={openButton} onMouseLeave={closeButton}>
-            <p>NEXT</p>
+            <p></p>
         </div>
     )
 }
