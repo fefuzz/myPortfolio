@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/career.css'
 import NextPage from './subComponents/NextPageBtn';
-import CareerDiv from './subComponents/PresentationJs/Career';
+import CareerDiv from './subComponents/CareerJs/Career';
 
 function CareerPage(props) {
 
