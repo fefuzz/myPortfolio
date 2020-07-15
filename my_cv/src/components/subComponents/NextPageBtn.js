@@ -14,21 +14,12 @@ function NextPageBtn(props) {
 
     let openButton = () => {
         let div = document.getElementsByClassName(currDiv)[0];
-
-        let btn = document.getElementsByClassName('NextPage')[0];
-
         div.style.marginRight = '50px';
-
-
     }
 
     let closeButton = () => {
         let div = document.getElementsByClassName(currDiv)[0];
-
-        let btn = document.getElementsByClassName('NextPage')[0];
-
         div.style.marginRight = '0';
-
     }
 
 

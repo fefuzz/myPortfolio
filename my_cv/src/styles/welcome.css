@@ -23,7 +23,7 @@
 .WelcomeDiv {
     margin: 0;
     border: 0;
-    height: 127px;
+    height: 195px;
     width: 400px;
     border-radius: 6% 6% 6% 6% / 95% 95% 95% 95% ;
     background-color: rgb(204, 219, 208);
@@ -37,28 +37,27 @@
     .WelcomeDiv:hover{
         border-radius: 2% 2% 2% 2% / 95% 95% 95% 95%;
     }
-
-    .WelcomeDiv h2{
-        font-size: 30px;
-    }
-
-    .WelcomeDiv h3{
-    font-size: 20px;
-    animation: EnterGrowText 2s;
-    }
-
-    .WelcomeDiv p{
-        font-size: 16px;
-        font-family: 'Lobster';
-        animation: EnterGrowTextP 2s;
-    }
-
         .Presentations{
             animation: Fade 3s
         }
 
-        .Presentations p{
-            font-family: 'Lobster', cursive;
+        .Presentations h3{
+            font-size: 22px;
+            font-family: 'Lobster';
+            animation: EnterGrowTextH3 2s;
+            margin-bottom: 30px;
+        }
+
+        .Presentations p {
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 3px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: lighter;
+            text-align: center;
+
+            animation: EnterGrowTextP 1s;
         }
 
         
@@ -76,16 +75,16 @@
     to { background-color: rgba(27, 30, 33, 1);}
   }
 
-@keyframes EnterGrowText {
+@keyframes EnterGrowTextH3 {
     0% { font-size: 5px;}
     40% {font-size: 5px;}
-    100% {font-size: 20px;}
+    100% {font-size: 22px;}
 }
 
 @keyframes EnterGrowTextP {
     0% { font-size: 5px;}
     40% {font-size: 5px;}
-    100% {font-size: 16px;}
+    100% {font-size: 13px;}
 }
 
 @keyframes FandeAndGrowSmall {

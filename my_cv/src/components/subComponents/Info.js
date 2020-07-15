@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../styles/info.css'
+
 function Info(props) {
 
     let year = props.year
@@ -8,14 +10,15 @@ function Info(props) {
     let parag = props.textParag
 
     return (
-    <div class="Info"> 
+        <div class="Info"> 
             <div className="infoYear"><h4>{year}</h4></div>
             <div className="infoDivisor"></div>
             <div className="infoText">
-                <p><b>{title}</b> - <i>{subTitle}</i></p>
-                <p>{parag}</p>
+                <p className="infoParagSubTitle"><i>{subTitle}</i></p>
+                <p className="infoParagTitle"><b>{title}</b></p>
+                <p className="infoParagDesc">{parag}</p>
             </div>
-    </div>
+        </div>
     )
 }
 

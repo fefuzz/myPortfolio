@@ -1,0 +1,80 @@
+.InfoLong {
+    display: flex;
+    flex-flow: row;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    height: min-content;
+    overflow: hidden;
+
+    transform: scaleY(1);
+    transform-origin: top;
+
+    animation: SlideDown 2s
+  }
+
+  .infoLongYear{
+    width: 65px;
+    text-align: right;
+  }
+  
+  .infoLongYear h4{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 13px;
+
+  }
+  
+  .infoLongDivisor{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    width: 2px;
+    background-color: rgb(4, 134, 164);
+  
+  }
+
+  .infoLongText{
+      width: 650px;
+  }
+  
+  .infoLongText p{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .infoLongText .infoLongParagTitle{
+    font-size: 14px;
+  }
+
+  .infoLongText .infoLongParagSubTitle{
+    font-size: 14px;
+  }
+
+  .infoLongText .infoLongParagDesc{
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  .infoLongText .infoLongParagTech{
+    font-size: 12px;
+  }
+
+
+  @keyframes SlideDown {
+    0% {
+        transform: scaleY(0);
+        
+    }
+
+    30% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}

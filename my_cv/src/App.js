@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import WelcomePage from "./components/WelcomePage";
 import CareerPage from "./components/CareerPage";
+import ExperiencePage from "./components/ExperiencePage";
 
 function App() {
 
@@ -26,9 +27,26 @@ function App() {
     });
 }
 
-let changePageAnimatedPresentation = () => {
+let changePageAnimatedCareer = () => {
         
   let pageDiv = document.getElementsByClassName('CareerDiv')[0];
+  pageDiv.style.opacity = 1;
+
+  let btn = document.getElementsByClassName('NextPage')[0];
+  btn.style.backgroundColor = 'rgb(177, 177, 177)';
+  btn.style.color = 'rgba(27, 30, 33, 1)';
+  let initialBtnMargin = 95;
+  let initialBtnWidth = 50;
+  let initialBtnRadius = 0;
+
+  requestAnimationFrame(() => {
+      animationSlide(pageDiv, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+  });
+}
+
+let changePageAnimatedExperience = () => {
+        
+  let pageDiv = document.getElementsByClassName('ExperienceDiv')[0];
   pageDiv.style.opacity = 1;
 
   let btn = document.getElementsByClassName('NextPage')[0];
@@ -102,8 +120,9 @@ let animationOpenNext = (btn, initialWidth, initialHeight) => {
 
     if(initialHeight >= 150 && initialWidth >= 150){
         cancelAnimationFrame(frame)
-        if(currPage === 'WELCOME_PAGE'){ setPage('PRESENTATION_PAGE');}
-        if(currPage === 'PRESENTATION_PAGE') { setPage('WELCOME_PAGE'); }
+        if(currPage === 'WELCOME_PAGE'){ setPage('CAREER_PAGE');}
+        if(currPage === 'CAREER_PAGE') { setPage('EXPERIENCE_PAGE'); }
+        if(currPage === 'EXPERIENCE_PAGE') { setPage('WELCOME_PAGE'); }
     }
 }
 
@@ -111,8 +130,11 @@ let animationOpenNext = (btn, initialWidth, initialHeight) => {
     if(currPage === 'WELCOME_PAGE'){
       return <WelcomePage changePageAnimated={changePageAnimatedWelcome}/>
     }
-    if(currPage === 'PRESENTATION_PAGE'){
-      return <CareerPage changePageAnimated={changePageAnimatedPresentation}/>
+    if(currPage === 'CAREER_PAGE'){
+      return <CareerPage changePageAnimated={changePageAnimatedCareer}/>
+    }
+    if(currPage === 'EXPERIENCE_PAGE'){
+      return <ExperiencePage changePageAnimated={changePageAnimatedExperience}/>
     }
   };
 
