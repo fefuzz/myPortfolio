@@ -9,87 +9,60 @@ function App() {
   //State of the application to change between the pages
   const [currPage, setPage] = useState('WELCOME_PAGE')
 
-
-  let changePageAnimatedNextWelcome = () => {
-        
+  let changePageAnimatedWelcome = (unclickedBtn, clickedBtn) => {
+          
     let pageDiv = document.getElementsByClassName('WelcomeDiv')[0];
     pageDiv.style.opacity = 1;
 
-    let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
+    let prevPageBtn = document.getElementsByClassName(unclickedBtn)[0];
     prevPageBtn.style.opacity = 1;
 
-    let btn = document.getElementsByClassName('NextPage')[0];
+    let btn = document.getElementsByClassName(clickedBtn)[0];
     btn.style.backgroundColor = 'rgb(177, 177, 177)';
     btn.style.color = 'rgba(27, 30, 33, 1)';
     let initialBtnMargin = 95;
     let initialBtnWidth = 50;
     let initialBtnRadius = 0;
 
-    requestAnimationFrame(() => {
+    if(clickedBtn === 'NextPage'){
+      requestAnimationFrame(() => {
         animationSlideNext(pageDiv, prevPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+      });
+    }
+    else if(clickedBtn === 'PrevPage') {
+      requestAnimationFrame(() => {
+        animationSlidePrev(pageDiv, prevPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
     });
-}
-
-let changePageAnimatedPrevWelcome = () => {
-        
-  let pageDiv = document.getElementsByClassName('WelcomeDiv')[0];
-  pageDiv.style.opacity = 1;
-
-  let nextPageBtn = document.getElementsByClassName('NextPage')[0];
-  nextPageBtn.style.opacity = 1;
+    }
+  }
 
 
-  let btn = document.getElementsByClassName('PrevPage')[0];
-  btn.style.backgroundColor = 'rgb(177, 177, 177)';
-  btn.style.color = 'rgba(27, 30, 33, 1)';
-  let initialBtnMargin = 95;
-  let initialBtnWidth = 50;
-  let initialBtnRadius = 0;
-
-  requestAnimationFrame(() => {
-      animationSlidePrev(pageDiv, nextPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
-  });
-}
-
-let changePageAnimatedNextCareer = () => {
+let changePageAnimatedCareer = (unclickedBtn, clickedBtn) => {
         
   let pageDiv = document.getElementsByClassName('CareerDiv')[0];
   pageDiv.style.opacity = 1;
 
-  let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
+  let prevPageBtn = document.getElementsByClassName(unclickedBtn)[0];
   prevPageBtn.style.opacity = 1;
 
 
-  let btn = document.getElementsByClassName('NextPage')[0];
+  let btn = document.getElementsByClassName(clickedBtn)[0];
   btn.style.backgroundColor = 'rgb(177, 177, 177)';
   btn.style.color = 'rgba(27, 30, 33, 1)';
   let initialBtnMargin = 95;
   let initialBtnWidth = 50;
   let initialBtnRadius = 0;
 
-  requestAnimationFrame(() => {
+  if(clickedBtn === 'NextPage'){
+    requestAnimationFrame(() => {
       animationSlideNext(pageDiv, prevPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+    });
+  }
+  else if(clickedBtn === 'PrevPage') {
+    requestAnimationFrame(() => {
+      animationSlidePrev(pageDiv, prevPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
   });
-}
-
-let changePageAnimatedPrevCareer = () => {
-        
-  let pageDiv = document.getElementsByClassName('CareerDiv')[0];
-  pageDiv.style.opacity = 1;
-
-  let nextPageBtn = document.getElementsByClassName('NextPage')[0];
-  nextPageBtn.style.opacity = 1;
-
-  let btn = document.getElementsByClassName('PrevPage')[0];
-  btn.style.backgroundColor = 'rgb(177, 177, 177)';
-  btn.style.color = 'rgba(27, 30, 33, 1)';
-  let initialBtnMargin = 95;
-  let initialBtnWidth = 50;
-  let initialBtnRadius = 0;
-
-  requestAnimationFrame(() => {
-      animationSlidePrev(pageDiv, nextPageBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
-  });
+  }
 }
 
 let changePageAnimatedNextExperience = () => {
@@ -271,10 +244,10 @@ let animationOpenPrev = (btn, initialWidth, initialHeight) => {
 
   var render = () => {
     if(currPage === 'WELCOME_PAGE'){
-      return <WelcomePage changePageAnimatedNext={changePageAnimatedNextWelcome} changePageAnimatedPrev={changePageAnimatedPrevWelcome}/>
+      return <WelcomePage changePageAnimatedNext={() => {changePageAnimatedWelcome('PrevPage', 'NextPage')}} changePageAnimatedPrev={() => {changePageAnimatedWelcome('NextPage', 'PrevPage')}}/>
     }
     if(currPage === 'CAREER_PAGE'){
-      return <CareerPage changePageAnimatedNext={changePageAnimatedNextCareer} changePageAnimatedPrev={changePageAnimatedPrevCareer}/>
+      return <CareerPage changePageAnimatedNext={() => {changePageAnimatedCareer('PrevPage', 'NextPage')}} changePageAnimatedPrev={() => {changePageAnimatedCareer('NextPage', 'PrevPage')}}/>
     }
     if(currPage === 'EXPERIENCE_PAGE'){
       return <ExperiencePage changePageAnimatedNext={changePageAnimatedNextExperience} changePageAnimatedPrev={changePageAnimatedPrevExperience}/>
