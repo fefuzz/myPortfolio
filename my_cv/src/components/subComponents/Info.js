@@ -10,7 +10,7 @@ function Info(props) {
     let parag = props.textParag
 
     return (
-        <div class="Info"> 
+        <div className="Info"> 
             <div className="infoYear"><h4>{year}</h4></div>
             <div className="infoDivisor"></div>
             <div className="infoText">

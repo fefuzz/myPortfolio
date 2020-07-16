@@ -1,10 +1,10 @@
 import React from 'react'
 
 import '../styles/experience.css'
-import NextPage from './subComponents/NextPageBtn';
-import PrevPageBtn from './subComponents/PrevPageBtn';
 
 import ExperienceDiv from './subComponents/ExperienceJs/Experience';
+import NextPage from './subComponents/NextPageBtn';
+import PrevPageBtn from './subComponents/PrevPageBtn';
 
 function ExperiencePage(props) {
 
