@@ -1,10 +1,10 @@
 import React from 'react'
 
-import '../../styles/next_page_btn.css'
+import '../../styles/nav_page_btn.css'
 
 function NextPageBtn(props) {
 
-    let changePageAnimated = props.changePageAnimated;
+    let changePageAnimated = props.changePageAnimatedNext;
     let currDiv = props.currDiv;
 
     let setNextPage = () => {
@@ -14,12 +14,17 @@ function NextPageBtn(props) {
 
     let openButton = () => {
         let div = document.getElementsByClassName(currDiv)[0];
+        let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
         div.style.marginRight = '50px';
+        prevPageBtn.style.marginRight = '97vw'
     }
 
     let closeButton = () => {
         let div = document.getElementsByClassName(currDiv)[0];
+        let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
+
         div.style.marginRight = '0';
+        prevPageBtn.style.marginRight = '95vw'
     }
 
 

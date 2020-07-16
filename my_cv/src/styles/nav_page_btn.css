@@ -1,0 +1,89 @@
+.NextPage{
+    position: absolute;
+    margin-left: 95vw;
+    height: 22px;
+    width: 50px;
+    background-color: inherit;
+    border: 2px solid rgb(177, 177, 177);
+    animation: Fade 2s;
+    color: rgb(177, 177, 177);
+
+    /*transition: 0.3s;*/
+}
+
+.NextPage p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    transition: 600ms;
+}
+
+.NextPage:hover{
+    background-color: rgb(177, 177, 177);
+    color: rgba(27, 30, 33, 1);
+    cursor: pointer;
+}
+
+.NextPage p:after{
+    font-size: 14px;
+    content:'Next';
+}
+.NextPage p:hover:after{
+    font-size: 14px;
+    content:'> Next';
+}
+
+
+
+
+
+
+.PrevPage{
+    position: absolute;
+    margin-right: 95vw;
+    height: 22px;
+    width: 50px;
+    background-color: inherit;
+    border: 2px solid rgb(177, 177, 177);
+    animation: Fade 2s;
+    color: rgb(177, 177, 177);
+
+    /*transition: 0.3s;*/
+}
+
+.PrevPage p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    transition: 600ms;
+}
+
+.PrevPage:hover{
+    background-color: rgb(177, 177, 177);
+    color: rgba(27, 30, 33, 1);
+    cursor: pointer;
+}
+
+.PrevPage p:after{
+    font-size: 14px;
+    content:'Prev';
+}
+.PrevPage p:hover:after{
+    font-size: 14px;
+    content:'Prev <';
+}
+
+@keyframes Fade {
+    0%{ opacity: 0;}
+    40%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes Fade {
+    0%{ opacity: 0;}
+    40%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+

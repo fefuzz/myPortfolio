@@ -23,7 +23,7 @@
 .WelcomeDiv {
     margin: 0;
     border: 0;
-    height: 195px;
+    height: 215px;
     width: 400px;
     border-radius: 6% 6% 6% 6% / 95% 95% 95% 95% ;
     background-color: rgb(204, 219, 208);
@@ -51,13 +51,30 @@
         .Presentations p {
             margin: 0px;
             padding: 0px;
-            margin-bottom: 3px;
             font-family: 'Poppins', sans-serif;
             font-size: 13px;
             font-weight: lighter;
-            text-align: center;
+            margin-left: 8px;
+        }
 
-            animation: EnterGrowTextP 1s;
+        .Presentations img {
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+        }
+
+        .ContactDiv {
+            margin: 0 auto;
+            margin-bottom: 5px;
+            display: flex;
+            flex-flow: row;
+            margin-left: 80px;
+
+        }
+
+        .Presentations a, a:visited {
+            text-decoration: none;
+            color: initial;
         }
 
         
@@ -79,12 +96,6 @@
     0% { font-size: 5px;}
     40% {font-size: 5px;}
     100% {font-size: 22px;}
-}
-
-@keyframes EnterGrowTextP {
-    0% { font-size: 5px;}
-    40% {font-size: 5px;}
-    100% {font-size: 13px;}
 }
 
 @keyframes FandeAndGrowSmall {
