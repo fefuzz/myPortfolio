@@ -17,6 +17,7 @@ function PrevPageBtn(props) {
         let nextPageBtn = document.getElementsByClassName('NextPage')[0];
         div.style.marginLeft = '50px';
         nextPageBtn.style.marginLeft = '97vw'
+
     }
 
     let closeButton = () => {
@@ -30,7 +31,7 @@ function PrevPageBtn(props) {
 
 
     return (
-        <div className='PrevPage' onClick={setNextPage} onMouseOver={openButton} onMouseLeave={closeButton}>
+        <div className='PrevPage BtnTransition' onClick={setNextPage} onMouseOver={openButton} onMouseLeave={closeButton}>
             <p></p>
         </div>
     )

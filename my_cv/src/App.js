@@ -4,6 +4,7 @@ import WelcomePage from "./components/WelcomePage";
 import CareerPage from "./components/CareerPage";
 import ExperiencePage from "./components/ExperiencePage";
 import InterestsPage from "./components/InterestsPage";
+import SkillsPage from "./components/SkillsPage";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     let btnUnclick = document.getElementsByClassName(unclickedBtn)[0];
     btnUnclick.style.opacity = 1;
 
+
     //setting a properties of the button to retrieve if it is next or prev button (more secure, hidden)
     btnUnclick.myType = unclickedBtn
 
@@ -25,6 +27,10 @@ function App() {
 
     //setting a properties of the button to retrieve if it is next or prev button (more secure, hidden)
     btn.myType = clickedBtn;
+
+
+    //deleting CSS3 transition class from clicked button to avoid collisions with Javascript transition
+    btn.classList.remove('BtnTransition');
 
     btn.style.backgroundColor = 'rgb(177, 177, 177)';
     btn.style.color = 'rgba(27, 30, 33, 1)';
@@ -105,13 +111,15 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         if(currPage === 'WELCOME_PAGE'){ setPage('CAREER_PAGE');}
         if(currPage === 'CAREER_PAGE') { setPage('EXPERIENCE_PAGE'); }
         if(currPage === 'EXPERIENCE_PAGE') { setPage('INTERESTS_PAGE'); }
-        if(currPage === 'INTERESTS_PAGE') { setPage('WELCOME_PAGE'); }
+        if(currPage === 'INTERESTS_PAGE') { setPage('SKILLS_PAGE'); }
+        if(currPage === 'SKILLS_PAGE') { setPage('WELCOME_PAGE'); }
       }
       else if (btn.myType === 'PrevPage'){ //if prev button go to prev page
-        if(currPage === 'WELCOME_PAGE'){ setPage('INTERESTS_PAGE');}
+        if(currPage === 'WELCOME_PAGE'){ setPage('SKILLS_PAGE');}
         if(currPage === 'CAREER_PAGE') { setPage('WELCOME_PAGE'); }
         if(currPage === 'EXPERIENCE_PAGE') { setPage('CAREER_PAGE'); }
-        if(currPage === 'INTEREST_PAGE') { setPage('EXPERIENCE_PAGE'); }
+        if(currPage === 'INTERESTS_PAGE') { setPage('EXPERIENCE_PAGE'); }
+        if(currPage === 'SKILLS_PAGE') { setPage('INTERESTS_PAGE'); }
       }
   }
 }
@@ -146,6 +154,14 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <InterestsPage
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'InterestsDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'InterestsDiv')}}
+        />
+      )
+    }
+    if(currPage === 'SKILLS_PAGE'){
+      return (
+        <SkillsPage
+          changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'SkillsDiv')}} 
+          changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'SkillsDiv')}}
         />
       )
     }

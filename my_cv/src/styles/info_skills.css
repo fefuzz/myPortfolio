@@ -1,0 +1,73 @@
+.InfoSkills {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+    height: min-content;
+    overflow: hidden;
+
+    transform: scaleY(1);
+    transform-origin: top;
+
+    animation: SlideDown 2s
+  }
+
+  .LanguagesDiv{
+      width: max-content;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      text-align: left;
+      margin-bottom: 15px;
+      height: min-content;
+
+      transform: scaleY(1);
+      transform-origin: top;
+
+      animation: SlideDown 2s
+  }
+
+  .LanguagesDiv p{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    }
+
+
+    .SkillsCategory {
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        width: 25%;
+        text-align: left;
+
+    }
+
+    .SkillsCategory h5 {
+        margin: 0;
+        padding: 0;
+        }
+    
+    .SkillsCategory p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .SkillsCategory p::before{
+        content:'✔ ';
+    }
+
+    @keyframes SlideDown {
+        0% {
+            transform: scaleY(0);
+            
+        }
+    
+        30% {
+            transform: scaleY(0);
+        }
+    
+        100% {
+            transform: scaleY(1);
+        }
+    
+    }

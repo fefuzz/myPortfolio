@@ -7,8 +7,6 @@
     border: 2px solid rgb(177, 177, 177);
     animation: Fade 2s;
     color: rgb(177, 177, 177);
-
-    /*transition: 0.3s;*/
 }
 
 .NextPage p {
@@ -36,9 +34,6 @@
 
 
 
-
-
-
 .PrevPage{
     position: absolute;
     margin-right: 95vw;
@@ -49,8 +44,9 @@
     animation: Fade 2s;
     color: rgb(177, 177, 177);
 
-    /*transition: 0.3s;*/
+
 }
+
 
 .PrevPage p {
     padding: 0;
@@ -74,6 +70,12 @@
     font-size: 14px;
     content:'Prev <';
 }
+
+
+.BtnTransition {
+    transition: 300ms;
+}
+
 
 @keyframes Fade {
     0%{ opacity: 0;}

@@ -31,7 +31,7 @@ function NextPageBtn(props) {
 
 
     return (
-        <div className='NextPage' onClick={setNextPage} onMouseOver={openButton} onMouseLeave={closeButton}>
+        <div className='NextPage BtnTransition' onClick={setNextPage} onMouseOver={openButton} onMouseLeave={closeButton}>
             <p></p>
         </div>
     )
