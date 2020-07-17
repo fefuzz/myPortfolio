@@ -10,6 +10,7 @@ function App() {
 
   //State of the application to change between the pages
   const [currPage, setPage] = useState('WELCOME_PAGE')
+  const [currLang, setLang] = useState('ENG')
 
   let changePageAnimated = (unclickedBtn, clickedBtn, currPageDiv) => {
           
@@ -138,6 +139,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <CareerPage 
           changePageAnimatedNext={() => {changePageAnimated('PrevPage', 'NextPage', 'CareerDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'CareerDiv')}}
+          currLang={currLang} setLang={setLang}
         />
       )
     }

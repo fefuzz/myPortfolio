@@ -1,0 +1,42 @@
+{
+    "pages" : {
+        "education" : {
+            "main_title" : "Carriera",
+            "infos" : [
+                {
+                    "title": "Diploma di scuola secondaria di secondo grado",
+                    "year": "2013", 
+                    "subtitle": "ITN Leone Acciaiuoli - Ortona",
+                    "parag": "Aspirante al comando di Navi Mercantili"
+                },
+                {
+                    "title": "Laurea di Primo Livello",
+                    "year": "2019", 
+                    "subtitle": "Università di Pisa - Ingegneria Informatica",
+                    "parag": "Dottore Triennale in Ingegneria Informatica con votazione 99/110"
+                }
+            ]
+
+        }
+    },
+    "experience" : {
+        "main_title" : "Esperienza",
+        "infos" : [
+            {
+                "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
+                "year": "03/2017 05/2017", 
+                "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
+                "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
+                "technologies": "Linguaggio C"
+            },
+            {
+                "title": "Sviluppo e Gestione di un database relazionale relativo ad una realtà aziendale",
+                "year": "03/2018 06/2018", 
+                "subtitle": "Progetto Formativo - Università di Pisa - Pisa",
+                "parag": "Realizzazione del database relativo ad una società di palestre operante (idealmente) a livello nazionale, con varie sedi e servizi offerti.",
+                "technologies": "MySQL | Diagrammi E-R | Strumenti dell'Ingegneria del software"
+            }
+        ]
+
+    }
+}

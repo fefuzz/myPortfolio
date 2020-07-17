@@ -1,14 +1,19 @@
 import React from 'react'
 import Info from '../Info'
 
-function CareerInfo() {
+function CareerInfo(props) {
+
+    let lang = props.lang;
+
     return (
     <div className='CareerInfo'>
-        <h3> - Education - </h3>
+        <h3> - {lang.pages.education.main_title} - </h3>
 
-        <Info year={'2013'} textTitle={'ITN Leone Acciaiuoli - Ortona'} textSubTitle={'Diploma di scuola secondaria di secondo grado'} textParag={'Aspirante al comando di Navi Mercantili'}/>
-        <Info year={'2019'} textTitle={'Università di Pisa - Ingegneria Informatica'} textSubTitle={'Laurea di Primo Livello'} textParag={'Dottore Triennale in Ingegneria Informatica con votazione 99/110'}/>
-
+        {
+            lang.pages.education.infos.map(elem => {
+                return <Info year={elem.year} textTitle={elem.title} textSubTitle={elem.subtitle} textParag={elem.parag}/>
+            })
+        }
     </div>
     )
 }
