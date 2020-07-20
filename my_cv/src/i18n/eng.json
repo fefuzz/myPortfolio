@@ -18,60 +18,60 @@
             ]
 
         }
-    },
-    "experience" : {
-        "main_title" : "Experience",
-        "infos" : [
-            {
-                "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
-                "year": "03/2017 05/2017", 
-                "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
-                "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
-                "technologies": "Programming language C"
-            },
-            {
-                "title": "Development and Management of a relational database related to a business reality",
-                "year": "03/2018 06/2018", 
-                "subtitle": "Training Project - University of Pisa - Pisa",
-                "parag": "Design and creation of a database related to a gyms company operating (ideally) at a national level, with various locations and services offered.",
-                "technologies": "MySQL | E-R diagrams | Software engineering tools"
-            },
-            {
-                "year":"10/2018 02/2019",
-                "title":"Design and Development of a Client-Server Application",
-                "subtitle":"Training Project - University of Pisa - Pisa",
-                "parag":"For data exchange via TFTP protocol, using Multi-Process programming and Program Interruption mechanisms",
-                "technologies":"Programming language C"
-            },
-            {
-                "year":"05/2019 08/2019",
-                "title":"Design and Development of a WEB Application for the management of a Gym",
-                "subtitle":"Training Project - University of Pisa - Pisa",
-                "parag":"Implementation of the Front-End and Back-End levels of the service, with database management to meet data consistency requirements",
-                "technologies":"HTML5 | CSS3 | PHP | Javascript | MySQL"
-            },
-            {
-                "year":"07/2019 12/2020",
-                "title":"Design, Development and Maintenance of a tool for loading and managing dynamic online questionnaires",
-                "subtitle":"Thesis and Work Project - IIT, CNR - Pisa",
-                "parag":"Implementation of the upload system of a .CSV file that dynamically generates a questionnaire. Design according to the phases of Software Engineering, actual development of the service (back-end and front-end) and subsequent extension by adding modules for managing compilations",
-                "technologies":"Java (Springboot, Hibernate framework) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
-            },
-            {
-                "year":"10/2019 12/2020",
-                "title":"Design and development of various web platforms related to work projects",
-                "subtitle":"Work Projects - IIT, CNR - Pisa",
-                "parag":"Implementation of back-end and front-end web platforms using REST architecture",
-                "technologies":"Java (Springboot Framework) | NodeJs (Express) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
-            },
-            {
-                "year":"10/2019 12/2020",
-                "title":"Experience in managing Apache2 and Tomcat web servers",
-                "subtitle":"Work Projects - IIT, CNR - Pisa",
-                "parag":"Management of Apache2 web servers to provide Java and NodeJs web services",
-                "technologies":"Apache2 | Tomcat"
-            }
-        ]
 
+        "experience" : {
+            "main_title" : "Experience",
+            "infos" : [
+                {
+                    "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
+                    "year": "03/2017 05/2017", 
+                    "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
+                    "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
+                    "technologies": "Programming language C"
+                },
+                {
+                    "title": "Development and Management of a relational database related to a business reality",
+                    "year": "03/2018 06/2018", 
+                    "subtitle": "Training Project - University of Pisa - Pisa",
+                    "parag": "Design and creation of a database related to a gyms company operating (ideally) at a national level, with various locations and services offered.",
+                    "technologies": "MySQL | E-R diagrams | Software engineering tools"
+                },
+                {
+                    "year":"10/2018 02/2019",
+                    "title":"Design and Development of a Client-Server Application",
+                    "subtitle":"Training Project - University of Pisa - Pisa",
+                    "parag":"For data exchange via TFTP protocol, using Multi-Process programming and Program Interruption mechanisms",
+                    "technologies":"Programming language C"
+                },
+                {
+                    "year":"05/2019 08/2019",
+                    "title":"Design and Development of a WEB Application for the management of a Gym",
+                    "subtitle":"Training Project - University of Pisa - Pisa",
+                    "parag":"Implementation of the Front-End and Back-End levels of the service, with database management to meet data consistency requirements",
+                    "technologies":"HTML5 | CSS3 | PHP | Javascript | MySQL"
+                },
+                {
+                    "year":"07/2019 12/2020",
+                    "title":"Design, Development and Maintenance of a tool for loading and managing dynamic online questionnaires",
+                    "subtitle":"Thesis and Work Project - IIT, CNR - Pisa",
+                    "parag":"Implementation of the upload system of a .CSV file that dynamically generates a questionnaire. Design according to the phases of Software Engineering, actual development of the service (back-end and front-end) and subsequent extension by adding modules for managing compilations",
+                    "technologies":"Java (Springboot, Hibernate framework) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
+                },
+                {
+                    "year":"10/2019 12/2020",
+                    "title":"Design and development of various web platforms related to work projects",
+                    "subtitle":"Work Projects - IIT, CNR - Pisa",
+                    "parag":"Implementation of back-end and front-end web platforms using REST architecture",
+                    "technologies":"Java (Springboot Framework) | NodeJs (Express) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
+                },
+                {
+                    "year":"10/2019 12/2020",
+                    "title":"Experience in managing Apache2 and Tomcat web servers",
+                    "subtitle":"Work Projects - IIT, CNR - Pisa",
+                    "parag":"Management of Apache2 web servers to provide Java and NodeJs web services",
+                    "technologies":"Apache2 | Tomcat"
+                }
+            ]
+        }
     }
 }

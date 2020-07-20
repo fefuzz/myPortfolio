@@ -18,60 +18,61 @@
             ]
 
         }
-    },
-    "experience" : {
-        "main_title" : "Esperienza",
-        "infos" : [
-            {
-                "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
-                "year": "03/2017 05/2017", 
-                "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
-                "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
-                "technologies": "Linguaggio C"
-            },
-            {
-                "title": "Sviluppo e Gestione di un database relazionale relativo ad una realtà aziendale",
-                "year": "03/2018 06/2018", 
-                "subtitle": "Progetto Formativo - Università di Pisa - Pisa",
-                "parag": "Progettazione e successiva creazione del database relativo ad una società di palestre operante (idealmente) a livello nazionale, con varie sedi e servizi offerti.",
-                "technologies": "MySQL | Diagrammi E-R | Strumenti dell'Ingegneria del software"
-            },
-            {
-                "year":"10/2018 02/2019",
-                "title":"Progettazione e Sviluppo di una Applicazione Client-Server",
-                "subtitle":"Progetto Formativo - Università di Pisa - Pisa",
-                "parag":"Per scambio dati tramite protocollo TFTP, utilizzando meccanismi di programmazione Multi-Processo ed Interruzione di Programma",
-                "technologies":"Linguaggio C"
-            },
-            {
-                "year":"05/2019 08/2019",
-                "title":"Progettazione e Sviluppo di una Applicazione WEB di gestione di una Palestra",
-                "subtitle":"Progetto Formativo - Università di Pisa - Pisa",
-                "parag":"Implementazione dei livelli di Front-End e Back-End del servizio, con gestione del database per soddisfare requisiti di consistenza dei dati",
-                "technologies":"HTML5 | CSS3 | PHP | Javascript | MySQL"
-            },
-            {
-                "year":"07/2019 12/2020",
-                "title":"Progettazione, Sviluppo e Manutenzione di un tool per caricamento e gestione di questionari dinamici online",
-                "subtitle":"Progetto di Tesi e Progetto Lavorativo - IIT, CNR - Pisa",
-                "parag":"Implementazione del sistema di upload di un file .CSV che genera dinamicamente un questionario. Progettazione del tool secondo le fasi proprie dell'Ingegneria del Software, successiva implementazione del servizio (back-end e front-end) e successiva estensione tramite aggiunta di moduli per la gestione delle compilazioni",
-                "technologies":"Java (framework Springboot, Hibernate) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
-            },
-            {
-                "year":"10/2019 12/2020",
-                "title":"Progettazione e Sviluppo di varie piattaforme web relative a progetti lavorativi",
-                "subtitle":"Progetti Lavorativi - IIT, CNR - Pisa",
-                "parag":"Implementazione di piattaforme web a livello Back-end e Front-end utilizzando architettura REST",
-                "technologies":"Java (framework Springboot) | NodeJs (Express) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
-            },
-            {
-                "year":"10/2019 12/2020",
-                "title":"Esperienza nella gestione di server web Apache2 e Tomcat",
-                "subtitle":"Progetti Lavorativi - IIT, CNR - Pisa",
-                "parag":"Gestione di server web Apache2 in ambito lavorativo per fornire servizi web implementati in Java o NodeJs",
-                "technologies":"Apache2 | Tomcat"
-            }
-        ]
 
+        "experience" : {
+            "main_title" : "Esperienza",
+            "infos" : [
+                {
+                    "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
+                    "year": "03/2017 05/2017", 
+                    "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
+                    "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
+                    "technologies": "Linguaggio C"
+                },
+                {
+                    "title": "Sviluppo e Gestione di un database relazionale relativo ad una realtà aziendale",
+                    "year": "03/2018 06/2018", 
+                    "subtitle": "Progetto Formativo - Università di Pisa - Pisa",
+                    "parag": "Progettazione e successiva creazione del database relativo ad una società di palestre operante (idealmente) a livello nazionale, con varie sedi e servizi offerti.",
+                    "technologies": "MySQL | Diagrammi E-R | Strumenti dell'Ingegneria del software"
+                },
+                {
+                    "year":"10/2018 02/2019",
+                    "title":"Progettazione e Sviluppo di una Applicazione Client-Server",
+                    "subtitle":"Progetto Formativo - Università di Pisa - Pisa",
+                    "parag":"Per scambio dati tramite protocollo TFTP, utilizzando meccanismi di programmazione Multi-Processo ed Interruzione di Programma",
+                    "technologies":"Linguaggio C"
+                },
+                {
+                    "year":"05/2019 08/2019",
+                    "title":"Progettazione e Sviluppo di una Applicazione WEB di gestione di una Palestra",
+                    "subtitle":"Progetto Formativo - Università di Pisa - Pisa",
+                    "parag":"Implementazione dei livelli di Front-End e Back-End del servizio, con gestione del database per soddisfare requisiti di consistenza dei dati",
+                    "technologies":"HTML5 | CSS3 | PHP | Javascript | MySQL"
+                },
+                {
+                    "year":"07/2019 12/2020",
+                    "title":"Progettazione, Sviluppo e Manutenzione di un tool per caricamento e gestione di questionari dinamici online",
+                    "subtitle":"Progetto di Tesi e Progetto Lavorativo - IIT, CNR - Pisa",
+                    "parag":"Implementazione del sistema di upload di un file .CSV che genera dinamicamente un questionario. Progettazione del tool secondo le fasi proprie dell'Ingegneria del Software, successiva implementazione del servizio (back-end e front-end) e successiva estensione tramite aggiunta di moduli per la gestione delle compilazioni",
+                    "technologies":"Java (framework Springboot, Hibernate) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
+                },
+                {
+                    "year":"10/2019 12/2020",
+                    "title":"Progettazione e Sviluppo di varie piattaforme web relative a progetti lavorativi",
+                    "subtitle":"Progetti Lavorativi - IIT, CNR - Pisa",
+                    "parag":"Implementazione di piattaforme web a livello Back-end e Front-end utilizzando architettura REST",
+                    "technologies":"Java (framework Springboot) | NodeJs (Express) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"
+                },
+                {
+                    "year":"10/2019 12/2020",
+                    "title":"Esperienza nella gestione di server web Apache2 e Tomcat",
+                    "subtitle":"Progetti Lavorativi - IIT, CNR - Pisa",
+                    "parag":"Gestione di server web Apache2 in ambito lavorativo per fornire servizi web implementati in Java o NodeJs",
+                    "technologies":"Apache2 | Tomcat"
+                }
+            ]
+    
+        }
     }
 }

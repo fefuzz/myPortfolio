@@ -8,9 +8,9 @@ function ExperienceInfo(props) {
     return (
         <div className='ExperienceInfo'>
 
-            <h3> - {lang.experience.main_title} - </h3>
+            <h3> - {lang.pages.experience.main_title} - </h3>
 {
-            lang.experience.infos.map(elem => {
+            lang.pages.experience.infos.map(elem => {
                 return <InfoLong 
                     year={elem.year} 
                     textTitle={elem.title} 
