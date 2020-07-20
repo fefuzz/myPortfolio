@@ -148,6 +148,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <ExperiencePage 
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'ExperienceDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'ExperienceDiv')}}
+          currLang={currLang} setLang={setLang}
         />
       )
     }

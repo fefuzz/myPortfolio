@@ -1,10 +1,13 @@
 import React from 'react'
 import ExperienceInfo from './ExperienceInfo'
 
-function Experience() {
+function Experience(props) {
+
+    let lang = props.lang
+
     return (
         <div className='ExperienceDiv' >
-            <ExperienceInfo />
+            <ExperienceInfo lang={lang}/>
         </div>
     )
 }

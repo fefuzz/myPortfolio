@@ -33,7 +33,7 @@
                 "title": "Sviluppo e Gestione di un database relazionale relativo ad una realtà aziendale",
                 "year": "03/2018 06/2018", 
                 "subtitle": "Progetto Formativo - Università di Pisa - Pisa",
-                "parag": "Realizzazione del database relativo ad una società di palestre operante (idealmente) a livello nazionale, con varie sedi e servizi offerti.",
+                "parag": "Progettazione e successiva creazione del database relativo ad una società di palestre operante (idealmente) a livello nazionale, con varie sedi e servizi offerti.",
                 "technologies": "MySQL | Diagrammi E-R | Strumenti dell'Ingegneria del software"
             },
             {
@@ -52,7 +52,7 @@
             },
             {
                 "year":"07/2019 12/2020",
-                "title":"Progettazione, Sviluppo e Manutenzione di un tool per caricamento e gestione di questionari online",
+                "title":"Progettazione, Sviluppo e Manutenzione di un tool per caricamento e gestione di questionari dinamici online",
                 "subtitle":"Progetto di Tesi e Progetto Lavorativo - IIT, CNR - Pisa",
                 "parag":"Implementazione del sistema di upload di un file .CSV che genera dinamicamente un questionario. Progettazione del tool secondo le fasi proprie dell'Ingegneria del Software, successiva implementazione del servizio (back-end e front-end) e successiva estensione tramite aggiunta di moduli per la gestione delle compilazioni",
                 "technologies":"Java (framework Springboot, Hibernate) | MySQL | HTML | CSS3 | JSP | NodeJs | Javascript ES6"

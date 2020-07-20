@@ -20,7 +20,7 @@ function CareerPage(props) {
 
     return (
         <div className='CareerPage'>
-            <CareerDiv  lang ={lang}/>
+            <CareerDiv lang ={lang}/>
             <NextPage changePageAnimatedNext={changePageAnimatedNext} currDiv={'CareerDiv'}/> 
             <PrevPageBtn changePageAnimatedPrev={changePageAnimatedPrev} currDiv={'CareerDiv'} />
         </div>
