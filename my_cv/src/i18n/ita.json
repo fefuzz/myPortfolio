@@ -83,6 +83,16 @@
                     "technologies":"Javascript ES6 (ReactJs) | HTML5 | CSS3"
                 }
             ]
+        },
+        "skills" : {
+            "main_title_skills" : "Skills",
+            "main_title_languages" : "Lingue",
+            "infos" : [
+                {
+                   "ita_lang_info" : "Madrelingua",
+                   "eng_lang_info" : "Livello Intermedio"
+                }
+            ]
         }
 
     }
