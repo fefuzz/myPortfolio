@@ -9,7 +9,8 @@ function ExperienceInfo(props) {
         <div className='ExperienceInfo'>
 
             <h3> - {lang.pages.experience.main_title} - </h3>
-{
+            
+            {
             lang.pages.experience.infos.map(elem => {
                 return <InfoLong 
                     year={elem.year} 

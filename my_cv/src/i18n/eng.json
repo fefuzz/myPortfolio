@@ -17,17 +17,16 @@
                 }
             ]
 
-        }
-
+        },
         "experience" : {
             "main_title" : "Experience",
             "infos" : [
                 {
-                    "title": "Sviluppo di un'Applicazione operante in ambito marittimo",
+                    "title": "Development of a software operating in the maritime sector",
                     "year": "03/2017 05/2017", 
-                    "subtitle": "Tirocinio Formativo - Genesy s.r.l. - Pisa",
-                    "parag": "Per il calcolo dell'inclinazione di un'imbarcazione, utilizzando dati provenienti da Accelerometro e Giroscopio. Utilizzo di un algoritmo di Sensor Fusion basato su Filtro di Kalman, per Gestione e Rielaborazione delle misurazioni date dai sensori al fine di fornire misurazioni esenti da errori tipici presenti nell'utilizzo singolo dei componenti.",
-                    "technologies": "Programming language C"
+                    "subtitle": "Internship - Genesy s.r.l. - Pisa",
+                    "parag": "For the calculation of the inclination of a boat, using data from Accelerometer and Gyroscope. Use of a Sensor Fusion algorithm based on Kalman filter, to process the measurements given by the two sensors in order to avoid typical errors in the use of individual components.",
+                    "technologies": "C Programming language"
                 },
                 {
                     "title": "Development and Management of a relational database related to a business reality",
@@ -41,7 +40,7 @@
                     "title":"Design and Development of a Client-Server Application",
                     "subtitle":"Training Project - University of Pisa - Pisa",
                     "parag":"For data exchange via TFTP protocol, using Multi-Process programming and Program Interruption mechanisms",
-                    "technologies":"Programming language C"
+                    "technologies":"C Programming language"
                 },
                 {
                     "year":"05/2019 08/2019",
@@ -70,6 +69,18 @@
                     "subtitle":"Work Projects - IIT, CNR - Pisa",
                     "parag":"Management of Apache2 web servers to provide Java and NodeJs web services",
                     "technologies":"Apache2 | Tomcat"
+                }
+            ]
+        },
+        "interests" : {
+            "main_title" : "Interests",
+            "infos" : [
+                {
+                    "title": "My Portfolio",
+                    "year": "2020", 
+                    "subtitle": "Personal Project - Pisa",
+                    "parag": "The passion for web-design has always led me to experiment and play with Front-End technologies in the IT field. The birth of frameworks that make the world of Front-End programming more structured and \"Object-Oriented \" has been a huge source of inspiration for me and this has prompted me to learn ReactJs and the new powerful standards CSS3, HTML5 and JS ES6 . Thus was born my virtual Curriculum Vitae, through which I want to show not only my work and university experience, but also what I am passionate about: a project free from the constraints that too often, in our work, cut the wings of creativity. This site is fully developed using the technologies mentioned, the github repo is public and can be visited entirely at the link []",
+                    "technologies":"Javascript ES6 (ReactJs) | HTML5 | CSS3"
                 }
             ]
         }

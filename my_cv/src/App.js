@@ -157,6 +157,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <InterestsPage
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'InterestsDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'InterestsDiv')}}
+          currLang={currLang} setLang={setLang}
         />
       )
     }

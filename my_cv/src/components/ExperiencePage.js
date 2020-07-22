@@ -17,6 +17,7 @@ function ExperiencePage(props) {
     let setLang = props.setLang;
 
     let lang = (currLang === 'ENG') ? engLang : itaLang;
+    
     return (
         <div className='ExperiencePage'>
 

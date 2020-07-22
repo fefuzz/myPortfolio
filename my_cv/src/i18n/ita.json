@@ -17,8 +17,7 @@
                 }
             ]
 
-        }
-
+        },
         "experience" : {
             "main_title" : "Esperienza",
             "infos" : [
@@ -72,7 +71,19 @@
                     "technologies":"Apache2 | Tomcat"
                 }
             ]
-    
+        },
+        "interests" : {
+            "main_title" : "Interessi",
+            "infos" : [
+                {
+                    "title": "Il mio Portfolio",
+                    "year": "2020", 
+                    "subtitle": "Progetto Personale - Pisa",
+                    "parag": "La passione per il web-design mi ha da sempre portato a sperimentare e giocare con tecnologie Front-End in ambito informatico. La nascita di frameworks che rendono il mondo della programmazione Front-End più strutturata e \"Object-Oriented\" è stata una fonte di ispirazione enorme per me e questo mi ha spinto ad imparare ReactJs e i nuovi potenti standard CSS3, HTML5 e JS ES6. Nasce così questo mio Curriculum Vitae virtuale, tramite il quale voglio mostrare non solo la mia esperienza lavorativa e universitaria, ma anche cio' che mi appassiona: un progetto esente dai vincoli che troppo spesso, nel nostro lavoro, tarpano le ali della creatività. Questo sito è completamente sviluppato utilizzando le tecnologie citate, la repo github è pubblica ed interamente visitabile al link []",
+                    "technologies":"Javascript ES6 (ReactJs) | HTML5 | CSS3"
+                }
+            ]
         }
+
     }
 }

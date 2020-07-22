@@ -2,10 +2,13 @@ import React from 'react'
 
 import InterestsInfo from './InterestsInfo'
 
-function Interests() {
+function Interests(props) {
+
+    let lang = props.lang
+
     return (
         <div className='InterestsDiv'>
-            <InterestsInfo />
+            <InterestsInfo lang={lang}/>
         </div>
     )
 }
