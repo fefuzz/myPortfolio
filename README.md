@@ -2,7 +2,7 @@ This project was born with the intention of improving my skills with the ReactJs
 
 The whole project is still under development and the repo is public, to also show the technical details of my work
 
-
+To enter the site, please visit: https://fefuzz.github.io/myPortfolio/
 
 
 ## Available Scripts
