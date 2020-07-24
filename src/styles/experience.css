@@ -50,10 +50,6 @@
     overflow: scroll;
 }
 
-    .ExperienceDiv:hover{
-        /*border-radius: 1% 1% 1% 1% / 90% 90% 90% 90% ;*/
-    }
-
         .ExperienceInfo{
             animation: Fade 2s
         }

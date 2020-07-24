@@ -50,10 +50,6 @@
     overflow: scroll;
 }
 
-    .InterestsDiv:hover{
-        /*border-radius: 1% 1% 1% 1% / 90% 90% 90% 90% ;*/
-    }
-
         .InterestsInfo{
             animation: Fade 2s
         }
