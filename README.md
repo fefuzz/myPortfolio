@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was born with the intention of improving my skills with the ReactJs framework and in the meantime building something useful for me, to be proposed as my portfolio, hosted thanks to the gh-pages module.
+
+The whole project is still under development and the repo is public, to also show the technical details of my work
+
+
+
 
 ## Available Scripts
 
