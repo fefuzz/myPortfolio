@@ -2,10 +2,14 @@ import React from 'react'
 
 import SkillsInfo from './SkillsInfo'
 
-function Skills() {
+function Skills(props) {
+
+    let lang = props.lang
+
+
     return (
         <div className='SkillsDiv'>
-            <SkillsInfo />
+            <SkillsInfo lang={lang}/>
         </div>
     )
 }

@@ -87,12 +87,18 @@
         "skills" : {
             "main_title_skills" : "Skills",
             "main_title_languages" : "Languages",
-            "infos" : [
-                {
+            "infos_skills": {
+                "programming": ["Java","C","C++17", "HTML5", "CSS3", "Javascript ES6", "PHP", "MySQL", "Python"],
+                "os": ["Linux", "Windows"],
+                "frameworks": ["Java Springboot", "Java Hibernate", "ReactJs", "NodeJs"],
+                "others": ["GIT", "Apache2", "Tomcat", "Office Suite", "LaTeX", "GiMP"]
+            },
+            "infos_language" : {
+                
                     "ita_lang_info" : "Native Speaking",
                     "eng_lang_info" : "Intermediate"
-                 }
-            ]
+                 
+            }
         }
     }
 }

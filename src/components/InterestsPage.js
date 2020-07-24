@@ -3,7 +3,7 @@ import React from 'react'
 import '../styles/interests.css'
 
 import InterestsDiv from './subComponents/InterestsJs/Interests'
-import NextPage from './subComponents/NextPageBtn';
+import NextPageBtn from './subComponents/NextPageBtn';
 import PrevPageBtn from './subComponents/PrevPageBtn';
 
 import itaLang from '../i18n/ita.json'
@@ -23,7 +23,7 @@ function InterestsPage(props) {
     return (
         <div className='InterestsPage'>
             <InterestsDiv lang ={lang}/>
-            <NextPage changePageAnimatedNext={changePageAnimatedNext} currDiv={'InterestsDiv'}/> 
+            <NextPageBtn changePageAnimatedNext={changePageAnimatedNext} currDiv={'InterestsDiv'}/> 
             <PrevPageBtn changePageAnimatedPrev={changePageAnimatedPrev} currDiv={'InterestsDiv'} />
         </div>
     )

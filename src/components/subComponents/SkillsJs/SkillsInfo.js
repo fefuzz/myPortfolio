@@ -2,32 +2,30 @@ import React from 'react'
 
 import InfoSkills from '../InfoSkills'
 
-function SkillsInfo() {
+function SkillsInfo(props) {
 
-    let arraySkillsProgramming = ['Java','C','C++17', 'HTML5', 'CSS3', 'Javascript ES6', 'PHP', 'MySQL', 'Python']
-    let arraySkillsOs = ['Linux', 'Windows']
-    let arraySkillsFrameworks = ['Java Springboot', 'Java Hibernate', 'ReactJs', 'NodeJs']
-    let arraySkillsOthers = ['GIT', 'Apache2', 'Tomcat', 'Office Suite', 'LaTeX', 'GiMP', ]
+    let lang = props.lang;
+
+    console.log(lang.pages.skills);
 
     return (
         <div className='SkillsInfo'>
 
-            <h3> - Skills - </h3>
+            <h3> - {lang.pages.skills.main_title_skills} - </h3>
 
             <InfoSkills 
-                programmingSkills={arraySkillsProgramming} 
-                osSkills={arraySkillsOs}
-                frameworksSkills={arraySkillsFrameworks}
-                othersSkills={arraySkillsOthers}
-
+                programmingSkills={lang.pages.skills.infos_skills.programming} 
+                osSkills={lang.pages.skills.infos_skills.os}
+                frameworksSkills={lang.pages.skills.infos_skills.frameworks}
+                othersSkills={lang.pages.skills.infos_skills.others}
             />
 
 
-            <h3> - Languages - </h3>
+            <h3> - {lang.pages.skills.main_title_languages} - </h3>
 
             <div className='LanguagesDiv'>
-                <p>✔ <b>Italiano</b> - Madrelingua</p>
-                <p>✔ <b>Inglese</b> - Intermedio</p>
+                <p>✔ <b>Italiano</b> - {lang.pages.skills.infos_language.ita_lang_info}</p>
+                <p>✔ <b>Inglese</b> - {lang.pages.skills.infos_language.eng_lang_info}</p>
             </div>
             
         </div>
