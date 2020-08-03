@@ -43,8 +43,6 @@
     border: 2px solid rgb(177, 177, 177);
     animation: Fade 2s;
     color: rgb(177, 177, 177);
-
-
 }
 
 
@@ -71,8 +69,38 @@
     content:'Prev <';
 }
 
+.Lang {
+    position: absolute;
+    margin-bottom: 95vh;
+    height: 15px;
+    width: 45px;
+    background-color: inherit;
+    border: 1px solid rgb(177, 177, 177);
+    animation: Fade 2s;
+    color: rgb(177, 177, 177);
+    display: flex;
+    flex-flow: row;
+}
+
+.Lang:hover{
+    width: 50px;
+}
+
+.Lang img {
+    height: 100%;
+    margin-left: 5px;
+}
+
+.Lang img:hover{
+    cursor: pointer;
+}
+
 
 .BtnTransition {
+    transition: 300ms;
+}
+
+.LangBtnTransition {
     transition: 300ms;
 }
 
