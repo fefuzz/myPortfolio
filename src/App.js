@@ -131,6 +131,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <WelcomePage 
           changePageAnimatedNext={() => {changePageAnimated('PrevPage', 'NextPage', 'WelcomeDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'WelcomeDiv')}}
+          currLang={currLang} setLang={() => {setLang('ITA')}}
         />
       )
     }

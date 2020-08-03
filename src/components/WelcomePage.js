@@ -10,6 +10,8 @@ import '../styles/welcome.css'
 
 function WelcomePage(props) {
 
+    let setLang = props.setLang;
+
     let changePageAnimatedNext = props.changePageAnimatedNext;
     let changePageAnimatedPrev = props.changePageAnimatedPrev;
 
@@ -18,7 +20,7 @@ function WelcomePage(props) {
             <WelcomeDiv /> 
             <NextPageBtn changePageAnimatedNext={changePageAnimatedNext} currDiv={'WelcomeDiv'}/> 
             <PrevPageBtn changePageAnimatedPrev={changePageAnimatedPrev} currDiv={'WelcomeDiv'} />
-            <LangBtn />
+            <LangBtn setLang={setLang}/>
         </div>
     )
 }
