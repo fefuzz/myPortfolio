@@ -8,6 +8,9 @@ import SkillsPage from "./components/SkillsPage";
 
 function App() {
 
+  //changind the document title
+  document.title = 'Pierpaolo Vanni | My Portfolio'
+
   //State of the application to change between the pages
   const [currPage, setPage] = useState('WELCOME_PAGE')
   const [currLang, setLang] = useState('ENG')
