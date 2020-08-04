@@ -2,19 +2,22 @@ import React from 'react'
 
 import '../../styles/nav_page_btn.css'
 
-import flagIta from '../../images/ita_flag.png'
-import flagEng from '../../images/eng_flag.png'
+import flagIta from '../../images/ita_flag_icon.png'
+import flagEng from '../../images/eng_flag_icon.png'
 
 
 
 function langBtn(props) {
 
-    let setLang = props.setLang;
+    let setLangIta = props.setLangIta;
+    let setLangEng = props.setLangEng;
 
     return (
         <div className='Lang LangBtnTransition'>
-            <img src={flagIta} alt="ita" onClick={setLang}/>
-            <img src={flagEng} alt="eng" onClick={setLang}/>
+            <div className='LangDiv'>
+                <img src={flagIta} alt="ita" onClick={setLangIta}/>
+                <img src={flagEng} alt="eng" onClick={setLangEng}/>
+            </div>  
         </div>
     )
 }

@@ -75,20 +75,22 @@
     height: 15px;
     width: 45px;
     background-color: inherit;
-    border: 1px solid rgb(177, 177, 177);
+    border: 2px solid rgb(0, 0, 0);
     animation: Fade 2s;
     color: rgb(177, 177, 177);
-    display: flex;
-    flex-flow: row;
+    transform: scale(0.7);
+}
+
+.LangDiv {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
 }
 
 .Lang:hover{
-    width: 50px;
-}
-
-.Lang img {
-    height: 100%;
-    margin-left: 5px;
+    transform: scale(0.8);
 }
 
 .Lang img:hover{
@@ -101,7 +103,7 @@
 }
 
 .LangBtnTransition {
-    transition: 300ms;
+    transition: 100ms;
 }
 
 

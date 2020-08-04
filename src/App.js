@@ -20,6 +20,9 @@ function App() {
     let btnUnclick = document.getElementsByClassName(unclickedBtn)[0];
     btnUnclick.style.opacity = 1;
 
+    let btnLang = document.getElementsByClassName('Lang LangBtnTransition')[0];
+    btnLang.style.opacity = 1;
+
 
     //setting a properties of the button to retrieve if it is next or prev button (more secure, hidden)
     btnUnclick.myType = unclickedBtn
@@ -41,23 +44,26 @@ function App() {
 
     if(clickedBtn === 'NextPage'){
       requestAnimationFrame(() => {
-        animationSlide(pageDiv, btnUnclick, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+        animationSlide(pageDiv, btnUnclick, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn, btnLang)
       });
     }
     else if(clickedBtn === 'PrevPage') {
       requestAnimationFrame(() => {
-        animationSlide(pageDiv, btnUnclick, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+        animationSlide(pageDiv, btnUnclick, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn, btnLang)
     });
     }
   }
 
 
-  let animationSlide = (pageDiv, unckickedBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn) => {
+  let animationSlide = (pageDiv, unckickedBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn, btnLang) => {
     if(pageDiv.style.opacity > 0){
       pageDiv.style.opacity -= 0.5;
     }
     if(unckickedBtn.style.opacity > 0){
       unckickedBtn.style.opacity -= 0.1;
+    }
+    if(btnLang.style.opacity > 0){
+      btnLang.style.opacity -=0.1;
     }
 
     let dec = 0.1 + (initialBtnMargin*0.09)
@@ -84,7 +90,7 @@ function App() {
     
 
     let frame = requestAnimationFrame(()=> {
-      animationSlide(pageDiv, unckickedBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn)
+      animationSlide(pageDiv, unckickedBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn, btnLang)
     });
 
     if(pageDiv.style.opacity <= 0 && initialBtnMargin <= 0){
@@ -131,7 +137,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <WelcomePage 
           changePageAnimatedNext={() => {changePageAnimated('PrevPage', 'NextPage', 'WelcomeDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'WelcomeDiv')}}
-          currLang={currLang} setLang={() => {setLang('ITA')}}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
         />
       )
     }
@@ -140,7 +146,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <CareerPage 
           changePageAnimatedNext={() => {changePageAnimated('PrevPage', 'NextPage', 'CareerDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'CareerDiv')}}
-          currLang={currLang} setLang={setLang}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
         />
       )
     }
@@ -149,7 +155,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <ExperiencePage 
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'ExperienceDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'ExperienceDiv')}}
-          currLang={currLang} setLang={setLang}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
         />
       )
     }
@@ -158,7 +164,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <InterestsPage
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'InterestsDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'InterestsDiv')}}
-          currLang={currLang} setLang={setLang}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
         />
       )
     }
@@ -167,7 +173,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <SkillsPage
           changePageAnimatedNext={() =>{changePageAnimated('PrevPage', 'NextPage', 'SkillsDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'SkillsDiv')}}
-          currLang={currLang} setLang={setLang}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
         />
       )
     }

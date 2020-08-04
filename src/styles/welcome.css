@@ -32,6 +32,8 @@
     animation: FandeAndGrowSmall 2s;
     box-shadow: 0 10px 6px -6px black;
     transition: 0.3s;
+
+    max-height: 86vh;
 }
 
     .WelcomeDiv:hover{
