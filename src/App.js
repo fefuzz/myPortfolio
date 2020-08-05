@@ -41,7 +41,9 @@ function App() {
 
     btn.style.backgroundColor = 'rgb(177, 177, 177)';
     btn.style.color = 'rgba(27, 30, 33, 1)';
-    let initialBtnMargin = 95;
+    btn.style.left = 'initial';
+    btn.style.right = 'initial';
+    let initialBtnMargin = 0;
     let initialBtnWidth = 50;
     let initialBtnRadius = 0;
 
@@ -69,17 +71,17 @@ function App() {
       btnLang.style.opacity -=0.1;
     }
 
-    let dec = 0.1 + (initialBtnMargin*0.09)
+    let inc = 5.1 - (initialBtnMargin*0.1)
 
-    initialBtnMargin -= dec;
+    initialBtnMargin += inc;
     initialBtnWidth -= 1;
     initialBtnRadius +=2;
 
     if(btn.myType === 'NextPage'){
-      btn.style.marginLeft = initialBtnMargin + 'vw';
+      btn.style.right = initialBtnMargin + 'vw';
     }
     else if(btn.myType === 'PrevPage'){
-      btn.style.marginRight = initialBtnMargin + 'vw';
+      btn.style.left = initialBtnMargin + 'vw';
     }
     if(initialBtnWidth > 22){
       btn.style.width = initialBtnWidth + 'px'
@@ -96,16 +98,19 @@ function App() {
       animationSlide(pageDiv, unckickedBtn, initialBtnMargin, initialBtnWidth, initialBtnRadius, btn, btnLang)
     });
 
-    if(pageDiv.style.opacity <= 0 && initialBtnMargin <= 0){
+    if(pageDiv.style.opacity <= 0 && initialBtnMargin >= 50){
         cancelAnimationFrame(frame)
         setTimeout(animationBtnOpen(btn, 0 , 0), 20);
     }
 }
 
 let animationBtnOpen = (btn, initialWidth, initialHeight) => {
+
   initialWidth += 12;
   initialHeight += 24;
   
+  btn.style.right='unset';
+  btn.style.left='unset';
   btn.style.width = initialWidth + 'vw';
   btn.style.height = initialHeight + 'vh';
 

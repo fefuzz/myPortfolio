@@ -1,6 +1,6 @@
 .NextPage{
     position: absolute;
-    margin-left: 95vw;
+    right: 0vw;
     height: 22px;
     width: 50px;
     background-color: inherit;
@@ -36,7 +36,7 @@
 
 .PrevPage{
     position: absolute;
-    margin-right: 95vw;
+    left: 0vw;
     height: 22px;
     width: 50px;
     background-color: inherit;
@@ -71,7 +71,7 @@
 
 .Lang {
     position: absolute;
-    margin-bottom: 95vh;
+    top: 0vh;
     height: 15px;
     width: 45px;
     background-color: inherit;

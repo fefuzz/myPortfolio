@@ -16,7 +16,7 @@ function NextPageBtn(props) {
         let div = document.getElementsByClassName(currDiv)[0];
         let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
         div.style.marginRight = '50px';
-        prevPageBtn.style.marginRight = '97vw'
+        prevPageBtn.style.left = '-1vw'
     }
 
     let closeButton = () => {
@@ -24,7 +24,7 @@ function NextPageBtn(props) {
         let prevPageBtn = document.getElementsByClassName('PrevPage')[0];
 
         div.style.marginRight = '0';
-        prevPageBtn.style.marginRight = '95vw'
+        prevPageBtn.style.left = '0vw'
     }
 
 
