@@ -119,3 +119,26 @@
     100%{opacity: 1;}
 }
 
+@media only screen and (max-width: 1000px) {
+    .Lang {
+        width: 100%;
+        border: none;
+        transform: scale(1);
+        margin-top: 3px;
+        animation: Fade 1s;
+    }
+
+    .Lang:hover{
+        transform: scale(1);
+    }
+
+    .LangDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .LangDiv img{
+        margin: 0 auto;
+    }
+}

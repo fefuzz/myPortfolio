@@ -6,8 +6,6 @@ function SkillsInfo(props) {
 
     let lang = props.lang;
 
-    console.log(lang.pages.skills);
-
     return (
         <div className='SkillsInfo'>
 

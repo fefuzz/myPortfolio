@@ -115,3 +115,67 @@
     50% {width: 300px;}
     100% {width: 400px;}
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .WelcomeDiv {
+        border: 0;
+        height: max-content;
+        width: 90vw;
+        background-color: rgb(204, 219, 208);
+        color: #17191e;
+        padding: 0px;
+        padding-bottom: 5px;
+        text-align: center;
+    
+        max-height: 90vh;
+        transition: none;
+        animation: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+
+    .WelcomeDiv:hover{
+        border-radius: 0;
+    }
+
+    .Presentations{
+        animation: none
+    }
+
+    .Presentations h3{
+        font-size: 22px;
+        font-family: 'Lobster';
+        animation: none;
+        margin-bottom: 30px;
+    }
+
+    .ContactDiv {
+        margin: 0 auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-flow: row;
+        margin-left: 10%;
+        animation: FadeMobile 1s;
+
+    }
+
+    .Presentations p {
+        text-align: left;
+    }
+
+    .Presentations p::before {
+        content: '';
+    }
+
+    @keyframes FadeMobile {
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+}
+  

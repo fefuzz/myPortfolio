@@ -39,7 +39,6 @@
         margin: 10px;
         width: 25%;
         text-align: left;
-
     }
 
     .SkillsCategory h5 {
@@ -70,4 +69,55 @@
             transform: scaleY(1);
         }
     
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        .InfoSkills {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 20px;
+            height: min-content;
+            overflow: hidden;
+        
+            transform: scaleY(1);
+            transform-origin: top;
+        
+            animation: SlideDown 1s
+          }
+
+          .LanguagesDiv{
+            width: max-content;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+            text-align: left;
+            margin-bottom: 15px;
+            height: min-content;
+      
+            transform: scaleY(1);
+            transform-origin: top;
+      
+            animation: SlideDown 1s
+        }
+
+        .SkillsCategory {
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+            width: 25%;
+            text-align: center;
+        }
+
+        .SkillsCategory h5 {
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        .SkillsCategory p::before{
+            content:'';
+        }
+    
+
     }

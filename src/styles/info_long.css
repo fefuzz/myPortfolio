@@ -78,3 +78,56 @@
     }
 
 }
+
+@media only screen and (max-width: 1000px) {
+
+  .InfoLong {
+    display: flex;
+    flex-flow: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    height: min-content;
+    overflow: hidden;
+
+    transform: scaleY(1);
+    transform-origin: top;
+
+    animation: SlideDown 1s
+  }
+
+  .infoLongYear{
+    width: min-content;
+    text-align: left;
+  }
+  
+  .infoLongYear h4{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 13px;
+
+  }
+  
+  .infoLongDivisor{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    width: 0;
+    background-color: rgb(4, 134, 164);
+  
+  }
+
+  .infoLongText{
+      width: 99%;
+  }
+  
+  .infoLongText p{
+    margin: 0px;  
+    padding: 0px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+
+}

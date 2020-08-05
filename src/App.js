@@ -5,6 +5,7 @@ import CareerPage from "./components/CareerPage";
 import ExperiencePage from "./components/ExperiencePage";
 import InterestsPage from "./components/InterestsPage";
 import SkillsPage from "./components/SkillsPage";
+import MobilePage from "./components/MobilePage";
 
 function App() {
 
@@ -14,6 +15,14 @@ function App() {
   //State of the application to change between the pages
   const [currPage, setPage] = useState('WELCOME_PAGE')
   const [currLang, setLang] = useState('ENG')
+  const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
+
+
+  let windowsResize = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
+  window.addEventListener('resize', windowsResize);
 
   let changePageAnimated = (unclickedBtn, clickedBtn, currPageDiv) => {
           
@@ -139,7 +148,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
   }
 }
 
-  var render = () => {
+  var renderFullPage = () => {
     if(currPage === 'WELCOME_PAGE'){
       return (
         <WelcomePage 
@@ -187,10 +196,25 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
     }
   };
 
+  var renderSimplePage = () => {
+    return (   
+      <MobilePage currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}/>
+    )
+  }
+
+
+  var renderResponsive = () => {
+    if(windowWidth >= 1000){
+      return renderFullPage();
+    }
+    else{
+      return renderSimplePage();
+    }
+  }
 
   return (
     <div>
-      {render()}
+      {renderResponsive()}
     </div>
   );
 }

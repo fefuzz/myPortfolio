@@ -46,7 +46,7 @@
     box-shadow: 0 10px 6px -6px black;
     transition: 0.3s;
 
-    max-height: 86vh;
+    max-height: 90vh;
     overflow: scroll;
 }
 
@@ -84,4 +84,45 @@
 
     50% {width: 750px;}
     100% {width: 800px;}
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .SkillsDiv {
+        border: 0;
+        height: max-content;
+        width: 90vw;
+        background-color: rgb(204, 219, 208);
+        color: #17191e;
+        padding: 0px;
+        padding-bottom: 5px;
+        text-align: center;
+    
+        max-height: none;
+        transition: none;
+        animation: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+
+    .SkillsDiv:hover{
+        border-radius: 0;
+    }
+
+    .SkillsInfo {
+        animation: FadeMobile 1s
+    }
+
+
+
+
+    @keyframes FadeMobile {
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    }
+
 }

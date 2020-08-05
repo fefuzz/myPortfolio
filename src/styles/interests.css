@@ -85,3 +85,42 @@
     50% {width: 750px;}
     100% {width: 800px;}
 }
+
+
+@media only screen and (max-width: 1000px) {
+
+    .InterestsDiv {
+        border: 0;
+        height: max-content;
+        width: 90vw;
+        background-color: rgb(204, 219, 208);
+        color: #17191e;
+        padding: 0px;
+        padding-bottom: 5px;
+        text-align: center;
+    
+        max-height: 90vh;
+        transition: none;
+        animation: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+
+    .InterestsDiv:hover{
+        border-radius: 0;
+    }
+
+    .InterestsInfo{
+        animation: FadeMobile 1s
+    }
+
+
+
+
+    @keyframes FadeMobile {
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    }
+}
