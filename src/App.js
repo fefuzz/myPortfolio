@@ -18,11 +18,13 @@ function App() {
   const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
 
 
+  /* To make responsive layout - Listen for windows resize */
   let windowsResize = () => {
     setWindowWidth(window.innerWidth);
   }
 
   window.addEventListener('resize', windowsResize);
+  /* To make responsive layout - Listen for windows resize */
 
   let changePageAnimated = (unclickedBtn, clickedBtn, currPageDiv) => {
           
@@ -154,7 +156,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
         <WelcomePage 
           changePageAnimatedNext={() => {changePageAnimated('PrevPage', 'NextPage', 'WelcomeDiv')}} 
           changePageAnimatedPrev={() => {changePageAnimated('NextPage', 'PrevPage', 'WelcomeDiv')}}
-          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}
+          currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}} isMobile={0}
         />
       )
     }
@@ -198,7 +200,7 @@ let animationBtnOpen = (btn, initialWidth, initialHeight) => {
 
   var renderSimplePage = () => {
     return (   
-      <MobilePage currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}}/>
+      <MobilePage currLang={currLang} setLangIta={() => {setLang('ITA')}} setLangEng={()=>{setLang('ENG')}} isMobile={1}/>
     )
   }
 

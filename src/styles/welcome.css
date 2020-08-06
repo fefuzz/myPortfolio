@@ -69,13 +69,15 @@
             margin-top: 2px;
         }
 
-        .ContactDiv {
+        .ContactsCentering{
+            width: max-content;
             margin: 0 auto;
+        }
+
+        .ContactDiv {
             margin-bottom: 5px;
             display: flex;
             flex-flow: row;
-            margin-left: 80px;
-
         }
 
         .Presentations a, a:visited {
@@ -124,8 +126,8 @@
         border: 0;
         height: max-content;
         width: 90vw;
-        background-color: rgb(204, 219, 208);
-        color: #17191e;
+        background-color: transparent;
+        color: rgb(204, 219, 208);
         padding: 0px;
         padding-bottom: 5px;
         text-align: center;
@@ -135,8 +137,10 @@
         animation: none;
         margin: 0 auto;
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 50px;
         border-radius: 0;
+
+        box-shadow: none;
     }
 
     .WelcomeDiv:hover{
@@ -151,15 +155,13 @@
         font-size: 22px;
         font-family: 'Lobster';
         animation: none;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .ContactDiv {
-        margin: 0 auto;
         margin-bottom: 5px;
         display: flex;
         flex-flow: row;
-        margin-left: 10%;
         animation: FadeMobile 1s;
 
     }
@@ -171,6 +173,12 @@
     .Presentations p::before {
         content: '';
     }
+
+    .Presentations a, a:visited {
+        text-decoration: none;
+        color: rgb(204, 219, 208);
+    }
+
 
     @keyframes FadeMobile {
         0%{ opacity: 0;}

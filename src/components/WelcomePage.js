@@ -16,9 +16,11 @@ function WelcomePage(props) {
     let changePageAnimatedNext = props.changePageAnimatedNext;
     let changePageAnimatedPrev = props.changePageAnimatedPrev;
 
+    let isMobile = props.isMobile;
+
     return ( 
         <div className='WelcomePage'> 
-            <WelcomeDiv /> 
+            <WelcomeDiv isMobile={isMobile} /> 
             <NextPageBtn changePageAnimatedNext={changePageAnimatedNext} currDiv={'WelcomeDiv'}/> 
             <PrevPageBtn changePageAnimatedPrev={changePageAnimatedPrev} currDiv={'WelcomeDiv'} />
             <LangBtn setLangIta={setLangIta} setLangEng={setLangEng} />

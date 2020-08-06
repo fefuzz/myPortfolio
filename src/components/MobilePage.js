@@ -17,15 +17,17 @@ function MobilePage(props) {
 
     let currLang = props.currLang;
 
+    let isMobile = props.isMobile;
+
     let lang = (currLang === 'ENG') ? engLang : itaLang;
 
     return (
         <div>
-            <WelcomeDiv />
-            <CareerDiv lang ={lang}/>
-            <ExperienceDiv lang ={lang}/>
-            <InterestsDiv lang ={lang}/>
-            <SkillsDiv lang ={lang}/>
+            <WelcomeDiv isMobile={isMobile} />
+            <CareerDiv lang={lang} />
+            <ExperienceDiv lang={lang} />
+            <InterestsDiv lang={lang} />
+            <SkillsDiv lang={lang} />
             <LangBtn setLangIta={setLangIta} setLangEng={setLangEng} />
             
         </div>
